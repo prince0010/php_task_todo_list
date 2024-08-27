@@ -11,6 +11,8 @@ class AuthController
     public function register($id)
     {
 
+        
+
     }
 
     public function login($email, $password)
