@@ -1,4 +1,4 @@
 <?php
 
-include "../view/register.view.php";
+include "../view/auth/register.view.php";
 
