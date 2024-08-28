@@ -1,0 +1,9 @@
+[] = The Main Page is the Login Page try to display it or call it to the index
+[] = Adding a functionalities for Register and Login
+[] = Adding a logics and authentications for Register and Login.
+[] = Adding a Authentication for Logged in.
+[] = Make sure only the current logged in User is the one that who can access and see its own tasks in the dashboard.view.php or authentication.
+[] = Adding a Sweet Alert to some of it like registering
+[] = Adding a animation after adding a task in the dashboard.view.php
+[] = Maybe adding a profile to edit and add a upload photo in it.
+[] = Adding a logic for the upload photo and making sure the sizes in minimun and not so big every upload

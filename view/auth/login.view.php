@@ -4,6 +4,8 @@
 
 ?>
 
+<!-- Use Sweet Alert Message for Logged In I think? -->
+
     <div>
         <div>
             Login
