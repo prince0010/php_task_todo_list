@@ -3,7 +3,13 @@
     session_start();
 
 ?>
+<title>
+    <?php 
 
+    $pageTitle = "Login"; echo $pageTitle
+  
+     ?> 
+</title>
 <!-- Use Sweet Alert Message for Logged In I think? -->
 
     <div>
