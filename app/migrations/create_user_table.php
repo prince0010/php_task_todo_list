@@ -19,7 +19,7 @@ try{
                                 phone VARCHAR(255) NOT NULL, 
                                 username VARCHAR(255) NOT NULL UNIQUE, 
                                 password VARCHAR(255) NOT NULL, 
-                                create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)";
+                                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP)";
     $pdo->exec($sql);
     echo "User Table Created Successfully";
 }
