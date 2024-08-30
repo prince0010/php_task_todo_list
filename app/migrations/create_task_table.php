@@ -12,7 +12,7 @@ try{
 
     $sql = "CREATE TABLE tasks(id INT AUTO_INCREMENT PRIMARY KEY, 
                                task_data varchar(255) NOT NULL,
-                               status varchar(255) DEFAULT 'Not-Completed', 'Completed', 
+                               status ENUM('Not-Completed', 'Completed') DEFAULT 'Not-Completed', 
                                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
                                user_id INT NOT NULL FOREIGN KEY REFERENCES users(id),
                                )";
