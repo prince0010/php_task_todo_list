@@ -20,6 +20,10 @@ class AuthController
           
     }
 
+    public function logout($uid)
+    {
+
+    }
 
 }
 
