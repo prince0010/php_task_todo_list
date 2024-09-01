@@ -1,7 +1,11 @@
-[] = The Main Page is the Login Page try to display it or call it to the index
-[] = Adding a functionalities for Register and Login
-[] = Adding a logics and authentications for Register and Login.
+[/] = The Main Page is the Login Page try to display it or call it to the index
+[/] = Adding a logics in the User Model.
+[/] = Adding the Ajax functions in the Register
+[] = Adding the Ajax functions in the Login
+[] = Adding a functionalities for Register and Login in the Auth Controllers.
+[] = Adding a logics and authentications for Register and Login in the Auth Controllers.
 [] = Adding a Authentication for Logged in.
+[] = Adding a logics in the Tasks Model.
 [] = Make sure only the current logged in User is the one that who can access and see its own tasks in the dashboard.view.php or authentication.
 [] = Adding a Sweet Alert to some of it like registering
 [] = Adding a animation after adding a task in the dashboard.view.php
