@@ -1,7 +1,5 @@
 <?php
 $pageTitle = "Register";
-
-include '../header.php';
 ?>
 
 <!-- Use Sweet Alert Message for Register, After register then display the Sweet Alert Modal and Display it. -->
