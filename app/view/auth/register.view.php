@@ -90,9 +90,11 @@ $pageTitle = "Register";
         }
 
         $.ajax({
-            url: '/register',
+            url: 'http://localhost:8080/public/index.php',
+            // url: '/index.php?action=register',
             method: 'POST',
             data: {
+                action: 'register',
                 firstname: firstname,
                 middlename: middlename,
                 lastname: lastname,
@@ -108,16 +110,17 @@ $pageTitle = "Register";
                     title: 'Registration Success',
                     text: 'You can now Proceed to Login'
                 }).then(() =>{
-                    windows.location.href = '../view/auth/login.view.php';
+                    windows.location.href = 'login.view.php';
                 });
             },
-            error:function()
+            error:function(xhr, status, error)
             {
                 Swal.fire({
                     icon: 'error',
                     title: 'Registration Failed',
                     text: 'Registration Failed. Please try again.'
                 });
+                console.log("AJAX Error: " + status + ": " + error);
             }
         });
     });

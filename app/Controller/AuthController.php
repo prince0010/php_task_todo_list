@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/../models/User.php';
+
 class AuthController
 {
 
@@ -46,29 +48,24 @@ class AuthController
     public function login($email, $password)
     {
 
-        if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        // if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
-            $email = $_POST['email'];
-            $password = $_POST['password'];
+        //     $email = $_POST['email'];
+        //     $password = $_POST['password'];
 
-            $userModel = new User();
+        //     $userModel = new User();
 
-        //    Check if the Email is not Exist 
-            if(!$userModel->checkIfEmailExist($email))
-            {
-                http_response_code(400);
-                echo json_encode(['message' => 'Sorry the Email Does Not Exist. Please Create a Account.']);
-                exit();
-            }
+        // //    Check if the Email is not Exist 
+        //     if(!$userModel->checkIfEmailExist($email))
+        //     {
+        //         http_response_code(400);
+        //         echo json_encode(['message' => 'Sorry the Email Does Not Exist. Please Create a Account.']);
+        //         exit();
+        //     }
 
-            $user = $userModel->login($email, $password);
+        //     $user = $userModel->login($email, $password);
 
-
-            
-
-
-
-        }
+        // }
           
     }
 

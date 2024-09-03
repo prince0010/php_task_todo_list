@@ -1,6 +1,6 @@
 <?php
 
-require_once '../migrations/migrations.php';
+require_once __DIR__ . '/../migrations/migrations.php';
 
 class User{
 
