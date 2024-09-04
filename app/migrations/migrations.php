@@ -30,8 +30,8 @@
 
         // echo "All migrations executed successfully!<br>";
     }
-    catch(Exception $e)
+    catch(Exception)
     {
-        echo "Error: ". $e->getMessage();
+        // echo "Error: ". $e->getMessage();
     }
 

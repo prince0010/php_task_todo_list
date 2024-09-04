@@ -1,7 +1,15 @@
 <?php
 
 
-function createTaskTable($pdo){
+function createTaskTable($pdo)
+{
+
+     // Check if table exists
+     $checkTable = $pdo->query("SHOW TABLES LIKE 'tasks'")->fetchColumn();
+
+     if ($checkTable) {
+         return; // Table exists, so exit the function silently
+     }
 
     $sql = "CREATE TABLE IF NOT EXISTS tasks (
         id INT AUTO_INCREMENT PRIMARY KEY,

@@ -2,6 +2,14 @@
 
 function createUserTable($pdo)
 {
+
+    // Check if table exists
+    $checkTable = $pdo->query("SHOW TABLES LIKE 'users'")->fetchColumn();
+
+    if ($checkTable) {
+        return; // Table exists, so exit the function silently
+    }
+    
       $sql = "CREATE TABLE users(id INT AUTO_INCREMENT PRIMARY KEY, 
       firstname VARCHAR(255) NOT NULL, 
       middlename VARCHAR(255) NOT NULL, 

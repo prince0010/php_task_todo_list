@@ -12,6 +12,12 @@ $pageTitle = "Main Page Title";
 
 error_log("Action: $action");
 error_log("View: $view");
+
+// Setup PDO. 
+// So you can call the $host $dbname, $user, $pass from this folder because of the require called in the AuthController.php and the required call in the AuthController which is User.php from models and the User.php there is require called the migrations.php from migration folder that contains the $dbname, $host, $user, $pass variables.
+$pdo = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 // switch($action)
 // {
 //     case 'register':
