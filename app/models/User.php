@@ -24,4 +24,16 @@ class User{
         $stmt->execute([$email]);
         return $stmt->fetch() ? true : false;
     }
+
+    public function login($email, $password)
+    {
+        $stmt = "SELECT * FROM users WHERE email = ? AND password = ?";
+
+        $stmt = $this->pdo->prepare($stmt);
+
+        $stmt->execute([$email, $password]);
+
+        return $stmt->fetch();
+        
+    }
 }
